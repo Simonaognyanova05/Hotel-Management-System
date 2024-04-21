@@ -5,6 +5,11 @@ const exphbs = require('express-handlebars');
 const path = require('path');
 
 const homeConstroller = require('./src/user/home');
+const aboutController = require('./src/user/about');
+const doubleRoom = require('./src/user/doubleRoom');
+const doubleBalcony = require('./src/user/doubleBalcony');
+const doubleDelox = require('./src/user/doubleDelox');
+const oneRoomApart = require('./src/user/oneRoomApart');
 
 const app = express();
 
@@ -24,5 +29,11 @@ app.set('view engine', 'hbs');
 app.use('/content', express.static('static'));
 
 app.get('/', homeConstroller);
+app.get('/about', aboutController);
+app.get('/double', doubleRoom);
+app.get('/doubleBalcony', doubleBalcony);
+app.get('/doubleLux', doubleDelox);
+app.get('/oneRoomApart', oneRoomApart);
+
 
 app.listen(3000);
