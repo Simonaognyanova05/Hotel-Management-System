@@ -36,6 +36,8 @@ const spaAdmin = require('./src/admin/spa');
 const childrenAdmin = require('./src/admin/children');
 const eventsAdmin = require('./src/admin/events');
 const banquetHallAdmin = require('./src/admin/banquetHall');
+const login = require('./src/admin/login');
+const register = require('./src/admin/register');
 
 const app = express();
 
@@ -86,5 +88,7 @@ app.get('/admin/spa', spaAdmin);
 app.get('/admin/children', childrenAdmin);
 app.get('/admin/events', eventsAdmin);
 app.get('/admin/banquetHall', banquetHallAdmin);
+app.get('/admin/login', login);
+app.get('/admin/register', register);
 
 app.listen(3000);
