@@ -21,6 +21,22 @@ const children = require('./src/user/children');
 const events = require('./src/user/events');
 const banquetHall = require('./src/user/banquetHall');
 
+const homeAdmin = require('./src/admin/home');
+const doubleRoomAdmin = require('./src/admin/doubleRoom');
+const doubleBalconyAdmin = require('./src/admin/doubleBalcony');
+const doubleDeloxAdmin = require('./src/admin/doubleDelox');
+const oneRoomApartAdmin = require('./src/admin/oneRoomApart');
+const twoRoomsApartAdmin = require('./src/admin/twoRoomsApart');
+const vipApartAdmin = require('./src/admin/vipApart');
+const presidentApartAdmin = require('./src/admin/presidentApart');
+const summerBarAdmin = require('./src/admin/summerBar');
+const lobbyAdmin = require('./src/admin/lobby');
+const restaurantAdmin = require('./src/admin/restaurant');
+const spaAdmin = require('./src/admin/spa');
+const childrenAdmin = require('./src/admin/children');
+const eventsAdmin = require('./src/admin/events');
+const banquetHallAdmin = require('./src/admin/banquetHall');
+
 const app = express();
 
 const hbs = exphbs.create({ extname: 'hbs', defaultLayout: 'main', layoutsDir: path.join(__dirname, 'views/layouts/') });
@@ -55,7 +71,20 @@ app.get('/children', children);
 app.get('/events', events);
 app.get('/banquetHall', banquetHall);
 
-
-
+app.get('/admin', homeAdmin);
+app.get('/admin/double', doubleRoomAdmin);
+app.get('/admin/doubleBalcony', doubleBalconyAdmin);
+app.get('/admin/doubleLux', doubleDeloxAdmin);
+app.get('/admin/oneRoomApart', oneRoomApartAdmin);
+app.get('/admin/twoRoomApart', twoRoomsApartAdmin);
+app.get('/admin/vipApart', vipApartAdmin);
+app.get('/admin/presidentApart', presidentApartAdmin);
+app.get('/admin/summerBar', summerBarAdmin);
+app.get('/admin/lobby', lobbyAdmin);
+app.get('/admin/restaurant', restaurantAdmin);
+app.get('/admin/spa', spaAdmin);
+app.get('/admin/children', childrenAdmin);
+app.get('/admin/events', eventsAdmin);
+app.get('/admin/banquetHall', banquetHallAdmin);
 
 app.listen(3000);
