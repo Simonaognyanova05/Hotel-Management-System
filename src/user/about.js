@@ -1,3 +1,3 @@
 module.exports = (req, res) => {
-    res.render('about', { title: "За нас "})
+    res.render('user/about', { title: "За нас "})
 }

@@ -1,3 +1,3 @@
 module.exports = (req, res) => {
-    res.render('oneRoomApart', { title: 'Едностаен апартамент'});
+    res.render('user/oneRoomApart', { title: 'Едностаен апартамент'});
 }

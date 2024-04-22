@@ -1,3 +1,3 @@
 module.exports = (req, res) => {
-    res.render('home', {title: "Начало"})
+    res.render('user/home', {title: "Начало"})
 }

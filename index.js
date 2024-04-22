@@ -13,6 +13,13 @@ const oneRoomApart = require('./src/user/oneRoomApart');
 const twoRoomsApart = require('./src/user/twoRoomsApart');
 const vipApart = require('./src/user/vipApart');
 const presidentApart = require('./src/user/presidentApart');
+const summerBar = require('./src/user/summerBar');
+const lobby = require('./src/user/lobby');
+const restaurant = require('./src/user/restaurant');
+const spa = require('./src/user/spa');
+const children = require('./src/user/children');
+const events = require('./src/user/events');
+const banquetHall = require('./src/user/banquetHall');
 
 const app = express();
 
@@ -40,5 +47,15 @@ app.get('/oneRoomApart', oneRoomApart);
 app.get('/twoRoomApart', twoRoomsApart);
 app.get('/vipApart', vipApart);
 app.get('/presidentApart', presidentApart);
+app.get('/summerBar', summerBar);
+app.get('/lobby', lobby);
+app.get('/restaurant', restaurant);
+app.get('/spa', spa);
+app.get('/children', children);
+app.get('/events', events);
+app.get('/banquetHall', banquetHall);
+
+
+
 
 app.listen(3000);
