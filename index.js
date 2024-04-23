@@ -38,6 +38,7 @@ const eventsAdmin = require('./src/admin/events');
 const banquetHallAdmin = require('./src/admin/banquetHall');
 const login = require('./src/admin/login');
 const register = require('./src/admin/register');
+const { addAdmin } = require('./requests/admin/register');
 
 const app = express();
 
@@ -90,5 +91,7 @@ app.get('/admin/events', eventsAdmin);
 app.get('/admin/banquetHall', banquetHallAdmin);
 app.get('/admin/login', login);
 app.get('/admin/register', register);
-
+app.post('/admin/login', async (req, res) => {
+    await addAdmin(req, res);
+})
 app.listen(3000);
