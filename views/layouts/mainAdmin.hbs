@@ -22,7 +22,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
-                     <li class="nav-item dropdown">
+                    {{#if admin}}
+                    <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Настаняване
@@ -56,7 +57,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/admin/children">За децата</a>
                     </li>
-                  <li class="nav-item dropdown">
+                    <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Мероприятия
@@ -66,12 +67,11 @@
                             <li><a class="dropdown-item" href="/admin/banquetHall">Банкетна зала</a></li>
                         </ul>
                     </li>
-                     <li class="nav-item">
+                    {{else}}
+                    <li class="nav-item">
                         <a class="nav-link" href="/admin/login">Влизане</a>
                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="/admin/register">Създаване на администратор</a>
-                    </li>
+                    {{/if}}
                 </ul>
             </div>
         </div>
