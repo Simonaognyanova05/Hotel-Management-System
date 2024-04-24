@@ -42,6 +42,7 @@ const { addAdmin } = require('./requests/admin/register');
 const { loginAdmin } = require('./requests/admin/login');
 const { doubleRoomReq } = require('./requests/admin/doubleRoomReq');
 const { doubleBalconyRoomReq } = require('./requests/admin/doubleBalconyRoomReq');
+const { doubleDeluxRoomReq } = require('./requests/admin/doubleDeluxReq');
 
 const app = express();
 
@@ -87,6 +88,9 @@ app.post('/doubleBalconyChange', async(req, res) => {
     await doubleBalconyRoomReq(req, res);
 })
 app.get('/admin/doubleLux', doubleDeloxAdmin);
+app.post('/doubleDelux', async(req, res) => {
+    await doubleDeluxRoomReq(req, res);
+})
 app.get('/admin/oneRoomApart', oneRoomApartAdmin);
 app.get('/admin/twoRoomApart', twoRoomsApartAdmin);
 app.get('/admin/vipApart', vipApartAdmin);
