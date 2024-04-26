@@ -20,4 +20,4 @@ async function doubleDeluxRoomReq(req, res) {
     }
 }
 
-module.exports = { doubleDeluxRoomReq } 
+module.exports = { doubleDeluxRoomReq }  
