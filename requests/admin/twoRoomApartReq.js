@@ -13,13 +13,8 @@ async function twoRoomApartReq(req, res) {
     const { info, capacity, roomSize, terrace, privateBathroom, view, pets, discounts, img1, img2, img3, img4, img5 } = req.body;
 
     try {
-       //await TwoRoomApart.updateOne({ $set: { info, capacity, roomSize, terrace, privateBathroom, view, pets, discounts, img1, img2, img3, img4, img5 } });
-       //res.redirect('/admin/twoRoomApart');
-       
-       const double = new TwoRoomApart({
-        info, capacity, roomSize, terrace, privateBathroom, view, pets, discounts, img1, img2, img3, img4, img5
-       })
-       await double.save();
+       await TwoRoomApart.updateOne({ $set: { info, capacity, roomSize, terrace, privateBathroom, view, pets, discounts, img1, img2, img3, img4, img5 } });
+       res.redirect('/admin/twoRoomApart');
     } catch (e) {
         console.log(e);
     }
