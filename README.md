@@ -1,3 +1,8 @@
 # Hotel
 Technologies:
-MongoDb atlas
+MongoDb Compass
+Bootstrap
+Mongoose
+Express
+Express-Handlebars
+Bcrypt
