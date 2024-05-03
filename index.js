@@ -51,6 +51,7 @@ const { restaurantReq } = require('./requests/admin/restaurantReq');
 const { lobbyReq } = require('./requests/admin/lobbyReq');
 const { summerbarReq } = require('./requests/admin/summerBarReq');
 const { spaReq } = require('./requests/admin/spaReq');
+const { childrenReq } = require('./requests/admin/childrenReq');
 
 const app = express();
 
@@ -132,6 +133,9 @@ app.post('/spa', async(req, res) => {
     await spaReq(req, res);
 });
 app.get('/admin/children', childrenAdmin);
+app.post('/children', async(req, res) => {
+    await childrenReq(req, res);
+});
 app.get('/admin/events', eventsAdmin);
 app.get('/admin/banquetHall', banquetHallAdmin);
 app.get('/admin/login', login);
