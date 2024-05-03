@@ -48,6 +48,7 @@ const { twoRoomApartReq } = require('./requests/admin/twoRoomApartReq');
 const { vipApartReq } = require('./requests/admin/vipApartReq');
 const { presidentApartReq } = require('./requests/admin/presidentApartReq');
 const { restaurantReq } = require('./requests/admin/restaurantReq');
+const { lobbyReq } = require('./requests/admin/lobbyReq');
 
 const app = express();
 
@@ -114,6 +115,9 @@ app.post('/presidentApart', async(req, res) => {
 })
 app.get('/admin/summerBar', summerBarAdmin);
 app.get('/admin/lobby', lobbyAdmin);
+app.post('/lobby', async(req, res) => {
+    await lobbyReq(req, res);
+})
 app.get('/admin/restaurant', restaurantAdmin);
 app.post('/restaurant', async(req, res) => {
     await restaurantReq(req, res);
