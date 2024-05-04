@@ -1,4 +1,4 @@
-const { getDoubleRoom } = require('../../requests/user/getDoubleRoom')
+const { getDoubleRoom } = require('../../requests/user/getDoubleRoom');
 
 module.exports = async (req, res) => {
     const doubleRoom = await getDoubleRoom(req, res);
