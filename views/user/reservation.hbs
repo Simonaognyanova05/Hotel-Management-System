@@ -1,0 +1,21 @@
+<h1>Направете своята резервация</h1>
+
+<form action="/makeReservation" method="post">
+    <label for="names">Три имена</label>
+    <input type="text" name="names">
+    <label for="typeOfRoom">Тип стая</label>
+    <select id="typeOfRoom" name="typeOfRoom">
+        <option value="Двойна стая">Двойна стая</option>
+        <option value="Двойна стая с тераса">Двойна стая с тераса</option>
+        <option value="Двойна стая делукс">Двойна стая делукс</option>
+        <option value="Едностаен апартамент">Едностаен апартамент</option>
+        <option value="Двустаен апартамент">Двустаен апартамент</option>
+        <option value="ВИП апартамент">ВИП апартамент</option>
+        <option value="Президентски апартамент">Президентски апартамент</option>
+    </select>
+    <label for="startData">Дата на настаняване</label>
+    <input type="date" name="startData">
+    <label for="endData">Дата на напускане</label>
+    <input type="date" name="endData">
+    <input type="submit" value="Резервирай">
+</form>
