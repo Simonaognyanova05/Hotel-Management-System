@@ -56,6 +56,7 @@ const { eventsReq } = require('./requests/admin/eventsReq');
 const { banquetReq } = require('./requests/admin/banquetReq');
 const reservation = require('./src/user/reservation');
 const { makeReservation } = require('./requests/user/makeReservation');
+const tenks = require('./src/user/tenks');
 
 const app = express();
 
@@ -93,7 +94,8 @@ app.get('/banquetHall', banquetHall);
 app.get('/reservation', reservation);
 app.post('/makeReservation', async(req, res) => {
     await makeReservation(req, res);
-})
+});
+app.get('/tenks', tenks);
 
 app.get('/admin', homeAdmin);
 app.get('/admin/double', doubleRoomAdmin);

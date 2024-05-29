@@ -16,7 +16,7 @@ async function makeReservation(req, res){
             names, typeOfRoom, startData, endData
         });
         await reservation.save();
-        res.redirect('/');
+        res.redirect('/tenks');
     }catch(e){
         console.log(e);
     }
