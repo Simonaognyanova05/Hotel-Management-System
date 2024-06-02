@@ -1,12 +1,16 @@
-body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .navbar {
     background-color: #333;
     overflow: hidden;
 }
-#logo{
+
+#logo {
     font-style: italic;
 }
 
@@ -75,20 +79,90 @@ body{
     background-color: #ddd;
     color: black;
 }
-#logo-img{
+
+#background {
+    height: 100%;
+    width: 100%;
+    background-image: url('../img/home-background.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#bg-img {
+    position: absolute;
+    background-color: black;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.7;
+    z-index: 0;
+}
+
+#background p {
+    position: absolute;
+    width: 60%;
+    top: 10%;
+    left: 50%; 
+    transform: translateX(-50%); 
+    color: white;
+    font-size: 60px; 
+    text-align: center;
+    font-weight: 300;
+    line-height: 100px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.buttons {
+    position: absolute;
+    top: calc(40% + 100px);
+    left: 50%; 
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+}
+
+.bulgaria {
+    background-color: rgb(202, 198, 225);
+    color: rgb(38, 38, 69);
+    border: 2px solid;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 25px;
+    margin: 30px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.bulgaria:hover {
+    background-color: rgb(38, 38, 69);
+    color: rgb(202, 198, 225);
+}
+
+#logo-img {
     width: 100px;
     height: 80px;
     border-radius: 80%;
 }
-footer{
+
+#home-title{
+    font-style: italic;
+}
+
+footer {
     color: #ddd;
     background-color: black;
-    padding: 5px;   
+    padding: 5px;
     margin-top: 20px;
     text-align: center;
 }
 
-footer a{
+footer a {
     text-decoration: none;
     color: #ddd;
 }
