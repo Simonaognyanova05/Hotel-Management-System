@@ -1,5 +1,6 @@
 @import url('./rooms.css');
 @import url('./restaurant.css');
+@import url('./summerBar.css');
 html,
 body {
     height: 100%;
