@@ -2,6 +2,7 @@
 @import url('./restaurant.css');
 @import url('./summerBar.css');
 @import url('./spa.css');
+@import url('./children.css');
 html,
 body {
     height: 100%;
