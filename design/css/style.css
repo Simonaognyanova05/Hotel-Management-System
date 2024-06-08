@@ -5,6 +5,7 @@
 @import url('./children.css');
 @import url('./events.css');
 @import url('./banquet.css');
+@import url('./reservation.css');
 html,
 body {
     height: 100%;
