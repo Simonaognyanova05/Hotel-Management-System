@@ -1,7 +1,7 @@
 #make-reservation {
     max-width: 600px;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 15px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -27,6 +27,19 @@
     border-radius: 5px;
 }
 
+#make-reservation .radio-group {
+    display: flex;
+    align-items: center;
+}
+
+#make-reservation .radio-group input[type="radio"] {
+    margin-right: 5px;
+}
+
+#make-reservation .radio-group label {
+    margin-right: 15px;
+}
+
 #make-reservation input[type="submit"] {
     background-color: #333;
     color: white;
@@ -35,13 +48,14 @@
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    margin-top: 10px;
 }
 
 #make-reservation input[type="submit"]:hover {
     background-color: black;
 }
 
-#make-reservation input, label{
-    margin: 8px;
+#make-reservation input, label {
+    margin: 5px;
 }
+
+
