@@ -7,4 +7,4 @@ Express,
 Express-Handlebars,
 Bcrypt.
 
-The project is web application 
+The project is web application.
