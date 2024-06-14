@@ -26,7 +26,7 @@ async function loginAdmin(req, res) {
                 res.send(`
                 <script>
                     alert('Невалидни данни!');
-                    window.location.href = '/admin/register';
+                    window.location.href = '/admin/login';
                 </script>
                 `)
             }
