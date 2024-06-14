@@ -3,6 +3,7 @@
     margin: 0 auto;
     margin-top: 15px;
     padding: 20px;
+    padding-right: 40px;
     border: 1px solid #ccc;
     border-radius: 10px;
     background-color: #f9f9f9;
@@ -20,6 +21,7 @@
 
 #make-reservation input[type="text"],
 #make-reservation input[type="date"],
+#make-reservation input[type="password"],
 #make-reservation select {
     width: 100%;
     padding: 10px;
