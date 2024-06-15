@@ -92,7 +92,7 @@ body {
 #background {
     height: 100%;
     width: 100%;
-    background-image: url('../img/home-background.jpg');
+    background-image: url('/content/img/home-background.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
