@@ -57,6 +57,7 @@ const { banquetReq } = require('./requests/admin/banquetReq');
 const reservation = require('./src/user/reservation');
 const { makeReservation } = require('./requests/user/makeReservation');
 const tenks = require('./src/user/tenks');
+const logout = require('./requests/admin/logout');
 
 const app = express();
 
@@ -158,6 +159,7 @@ app.get('/admin/login', login);
 app.post('/admin/login', async(req, res) => {
     await loginAdmin(req, res);
 })
+app.get('/admin/logout', logout)
 app.get('/admin/register', register);
 app.post('/admin/login', async (req, res) => {
     await addAdmin(req, res);
