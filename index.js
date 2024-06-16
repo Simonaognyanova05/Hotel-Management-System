@@ -58,6 +58,7 @@ const reservation = require('./src/user/reservation');
 const { makeReservation } = require('./requests/user/makeReservation');
 const tenks = require('./src/user/tenks');
 const logout = require('./requests/admin/logout');
+const reservations = require('./src/admin/reservations');
 
 const app = express();
 
@@ -164,4 +165,5 @@ app.get('/admin/register', register);
 app.post('/admin/login', async (req, res) => {
     await addAdmin(req, res);
 })
+app.get('/admin/reservations', reservations)
 app.listen(3000);
