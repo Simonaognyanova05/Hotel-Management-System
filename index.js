@@ -162,7 +162,7 @@ app.post('/admin/login', async(req, res) => {
 })
 app.get('/admin/logout', logout)
 app.get('/admin/register', register);
-app.post('/admin/login', async (req, res) => {
+app.post('/admin/register', async (req, res) => {
     await addAdmin(req, res);
 })
 app.get('/admin/reservations', reservations)
