@@ -1,4 +1,4 @@
-<h1>Ресторант</h1>
+{{!-- <h1>Ресторант</h1>
 
 <p><b>Breakfast 1: </b>{{restaurant.breakfast1}}</p>
 <p><b>Description: </b>{{restaurant.descriptionBreakfast1}}</p>
@@ -28,4 +28,78 @@
 <img src="{{restaurant.imgDinner2}}" alt="img2">
 <p><b>Dinner 3: </b>{{restaurant.dinner3}}</p>
 <p><b>Description: </b>{{restaurant.descriptionDinner3}}</p>
-<img src="{{restaurant.imgDinner3}}" alt="img3">
+<img src="{{restaurant.imgDinner3}}" alt="img3"> --}}
+
+<section id="title">
+    <h1>Ресторант</h1>
+    <h2>Меню</h2>
+</section>
+
+<section class="sub-title">
+    <h2>Закуска</h2>
+</section>
+
+<section id="breakfast">
+    <div id="images">
+        <div class="grid-container">
+            <div class="grid-item"><img src="{{restaurant.imgBrakfast1}}" alt="" class="imageInGrid">
+                <p class="food-title">{{restaurant.breakfast1}}</p>
+                <p class="food-description">{{restaurant.descriptionBreakfast1}}</p>
+            </div>
+            <div class="grid-item"><img src="{{restaurant.imgBrakfast2}}" alt="" class="imageInGrid">
+                <p class="food-title">{{restaurant.breakfast2}}</p>
+                <p class="food-description">{{restaurant.descriptionBreakfast2}}</p>
+            </div>
+            <div class="grid-item"><img src="{{restaurant.imgBrakfast3}}" alt="" class="imageInGrid">
+                <p class="food-title">{{restaurant.breakfast3}}</p>
+                <p class="food-description">{{restaurant.descriptionBreakfast3}}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="sub-title">
+    <h2>Обяд</h2>
+</section>
+
+<section id="lunch">
+    <div id="images">
+        <div class="grid-container">
+            <div class="grid-item"><img src="{{restaurant.imgLunch1}}" alt="" class="imageInGrid">
+                <p class="food-title">{{restaurant.lunch1}}</p>
+                <p class="food-description">{{restaurant.descriptionLunch1}}</p>
+            </div>
+            <div class="grid-item"><img src="{{restaurant.imgLunch2}}" alt="" class="imageInGrid">
+                <p class="food-title">{{restaurant.lunch2}}</p>
+                <p class="food-description">{{restaurant.descriptionLunch2}}</p>
+            </div>
+            <div class="grid-item"><img src="{{restaurant.imgLunch3}}" alt="" class="imageInGrid">
+                <p class="food-title">{{restaurant.lunch3}}</p>
+                <p class="food-description">{{restaurant.descriptionLunch3}}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="sub-title">
+    <h2>Вечеря</h2>
+</section>
+
+<section id="dinner">
+    <div id="images">
+        <div class="grid-container">
+            <div class="grid-item"><img src="{{restaurant.imgDinner1}}" alt="" class="imageInGrid">
+                <p class="food-title">{{restaurant.dinner1}}</p>
+                <p class="food-description">{{restaurant.descriptionDinner1}}</p>
+            </div>
+            <div class="grid-item"><img src="{{restaurant.imgDinner2}}" alt="" class="imageInGrid">
+                <p class="food-title">{{restaurant.dinner2}}</p>
+                <p class="food-description">{{restaurant.descriptionDinner2}}</p>
+            </div>
+            <div class="grid-item"><img src="{{restaurant.imgDinner3}}" alt="" class="imageInGrid">
+                <p class="food-title">{{restaurant.dinner3}}</p>
+                <p class="food-description">{{restaurant.descriptionDinner3}}</p>
+            </div>
+        </div>
+    </div>
+</section>
