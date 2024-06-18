@@ -1,4 +1,4 @@
-<h1>Двойна стая</h1>
+{{!-- <h1>Двойна стая</h1>
 
 <p><b>INFO: </b>{{doubleRoom.info}}</p>
 <p><b>CAPACITY: </b>{{doubleRoom.capacity}}</p>
@@ -13,4 +13,38 @@
 <img src="{{doubleRoom.img2}}" alt="img2">
 <img src="{{doubleRoom.img3}}" alt="img3">
 <img src="{{doubleRoom.img4}}" alt="img4">
-<img src="{{doubleRoom.img5}}" alt="img5">
+<img src="{{doubleRoom.img5}}" alt="img5"> --}}
+
+  <section id="title">
+        <h1>Двойна стая</h1>
+    </section>
+
+    <section id="images">
+        <div class="grid-container">
+            <div class="grid-item"><img src="{{doubleRoom.img1}}" alt="" class="imageInGrid"></div>
+            <div class="grid-item"><img src="{{doubleRoom.img2}}" alt="" class="imageInGrid"></div>
+            <div class="grid-item"><img src="{{doubleRoom.img3}}" alt="" class="imageInGrid"></div>
+            <div class="grid-item"><img src="{{doubleRoom.img4}}" alt="" class="imageInGrid"></div>
+            <div class="grid-item"><img src="{{doubleRoom.img5}}" alt="" class="imageInGrid"></div>
+            <div class="grid-item"><img src="{{doubleRoom.img6}}" alt="" class="imageInGrid"></div>
+
+        </div>
+    </section>
+
+    <section id="description">
+        <h3>Описание</h3>
+        <table>
+            <tr>
+                <td><b><i>Обща информация: </i></b>{{doubleRoom.info}}</td>
+                <td><b><i>Капацитет: </i></b>{{doubleRoom.capacity}}</td>
+                <td><b><i>Размер на стаята: </i></b>{{doubleRoom.roomSize}}</td>
+                <td><b><i>Тераса: </i></b>{{doubleRoom.terrace}}</td>
+            </tr>
+            <tr>
+                <td><b><i>Самостоятелна баня/Душ кабина: </i></b>{{doubleRoom.privateBathroom}}</td>
+                <td><b><i>Изглед: </i></b>{{doubleRoom.view}}</td>
+                <td><b><i>Домашни любимци: </i></b>{{doubleRoom.pets}}</td>
+                <td><b><i>Намаления и доплащания: </i></b>{{doubleRoom.discounts}}</td>
+            </tr>
+        </table>
+    </section>
