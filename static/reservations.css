@@ -21,25 +21,16 @@ h1 {
     text-align: center;
     color: #333;
 }
-table {
+#reservation-admin table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
 }
-th, td {
+#reservation-admin th, td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: left;
 }
-th {
+#reservation-admin th {
     background-color: #f2f2f2;
-}
-.add-reservation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.add-reservation input, .add-reservation button {
-    padding: 10px;
-    margin: 5px;
 }
