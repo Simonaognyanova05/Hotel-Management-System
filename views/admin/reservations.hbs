@@ -15,13 +15,19 @@
             </tr>
         </thead>
         <tbody id="reservationTable">
+            {{#each reservations}}
             <tr>
-                <td>Simona</td>
-                <td>Simona</td>
-                <td>Simona</td>
-                <td>Simona</td>
-                <td> <i class="fa-solid fa-check mark"> <i class="fa-solid fa-xmark"></i></td>
+                <td>{{this.names}}</td>
+                <td>{{this.typeOfRoom}}</td>
+                <td>{{this.startData}}</td>
+                <td>{{this.endData}}</td>
+                <td><a href="/check/reservation/{{this._id}}"><i class="fa-solid fa-check mark"></i></a></td>
             </tr>
+            {{else}}
+            <tr>
+                <td>Няма направени резервации</td>
+            </tr>
+            {{/each}}
         </tbody>
     </table>
 </section>
