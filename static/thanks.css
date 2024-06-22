@@ -1,0 +1,23 @@
+#tenks{
+    margin: 80px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#tenks h1{
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+#tenks p{
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+#tenks img{
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+}
