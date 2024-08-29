@@ -7,4 +7,4 @@ Express,
 Express-Handlebars,
 Bcrypt.
 
-The project is web application..
+I worked on this project throughout the Back-End Web Development training course. Every technique I learned from the course I applied to this project. So I was able to build a complete and functional web application.
